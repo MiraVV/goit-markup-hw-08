@@ -63,16 +63,16 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+  }
 
-    &__link {
-      transition-property: color;
-      transition-duration: var(--animation-duration);
-      transition-timing-function: var(--animation-type);
+  &__link {
+    transition-property: color;
+    transition-duration: var(--animation-duration);
+    transition-timing-function: var(--animation-type);
 
-      &:hover,
-      &:focus {
-        color: var(--accent-color);
-      }
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
     }
   }
 }

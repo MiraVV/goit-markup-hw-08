@@ -1,14 +1,19 @@
 .modal-form {
-  // width: 448px;
   width: 100%;
+  @media screen and (min-width: 1200px) {
+    width: 448px;
+  }
 
   &__title {
     margin-bottom: 12px;
 
     font-weight: 700;
     font-size: 20px;
-    // line-height: 1.15;
+
     line-height: 1.5;
+    @media screen and (min-width: 1200px) {
+      line-height: 1.15;
+    }
     text-align: center;
     letter-spacing: 0.03em;
 
@@ -132,8 +137,11 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 1.67;
-  // font-size: 14px;
-  // line-height: 1.71;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+
   letter-spacing: 0.03em;
 
   color: #757575;
