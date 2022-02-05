@@ -1,0 +1,16 @@
+body {
+  font-family: Roboto, sans-serif;
+  color: var(--body-color);
+}
+.link,
+.logo {
+  color: var(--body-color);
+}
+.list {
+  list-style-type: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

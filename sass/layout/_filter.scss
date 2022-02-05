@@ -1,0 +1,23 @@
+// --------------------------portfolio filter-------------------
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+
+  &__button {
+    display: block;
+    padding: 6px 22px;
+  }
+
+  &__item {
+    margin-right: 8px;
+    margin-bottom: 15px;
+  }
+}

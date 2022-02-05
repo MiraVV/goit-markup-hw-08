@@ -1,0 +1,54 @@
+//------------------exemples------------------
+.exemples {
+  padding-top: 25px;
+  padding-bottom: var(--size-to-line-mob);
+  &-list__item:not(:last-child) {
+    margin-bottom: var(--size-between);
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: calc(-1 * var(--size-between) / 2);
+      margin-top: calc(-1 * var(--size-between) / 2);
+
+      &__item {
+        flex-basis: calc(100% / 2 - var(--size-between) / 2);
+        margin-left: calc(var(--size-between) / 2);
+        margin-top: calc(var(--size-between) / 2);
+      }
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    &-list {
+      margin-left: calc(-1 * var(--size-between));
+      margin-top: calc(-1 * var(--size-between));
+
+      &__item {
+        flex-basis: calc(100% / 3 - var(--size-between));
+        margin-left: var(--size-between);
+        margin-top: var(--size-between);
+      }
+    }
+  }
+}
+// -----------------не работает?????????????
+// @media screen and (min-width: 768px) {
+//   .exemples-list {
+//     display: flex;
+//     flex-wrap: wrap;
+//     margin: -15px;
+//     &__item {
+//       width: calc((100% - 4 * 15) / 2);
+//       margin: 15px;
+//     }
+//   }
+//   .exemples-card__img {
+//     width: calc((100% - 4 * 15) / 2);
+//   }
+// }
