@@ -69,9 +69,7 @@
       ),
       url(../../images/hero-tab.jpg);
     background-size: 768px 400px;
-    // background-size: cover;
-    // background-position: center;
-    // background-repeat: no-repeat;
+
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -84,7 +82,6 @@
     }
   }
   @media screen and (min-width: 1200px) {
-    // max-width: 100%;
     max-width: 1600px;
     height: 600px;
     margin-left: auto;
