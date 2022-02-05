@@ -544,7 +544,6 @@ img {
   border: 1px solid #eeeeee;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  height: 100%;
   -webkit-transition-property: -webkit-box-shadow;
   transition-property: -webkit-box-shadow;
   transition-property: box-shadow;
@@ -553,6 +552,12 @@ img {
           transition-duration: var(--animation-duration);
   -webkit-transition-timing-function: var(--animation-type);
           transition-timing-function: var(--animation-type);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .exemples-card {
+    height: 100%;
+  }
 }
 
 .exemples-card:hover, .exemples-card:focus {
@@ -1533,7 +1538,7 @@ img {
   margin-bottom: var(--size-between);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .exemples {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -1544,14 +1549,12 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-left: calc(-1 * var(--size-between) / 2);
-    margin-top: calc(-1 * var(--size-between) / 2);
+    margin: -15px;
   }
   .exemples-list__item {
-    -ms-flex-preferred-size: calc(100% / 2 - var(--size-between) / 2);
-        flex-basis: calc(100% / 2 - var(--size-between) / 2);
-    margin-left: calc(var(--size-between) / 2);
-    margin-top: calc(var(--size-between) / 2);
+    -ms-flex-preferred-size: calc((100% - 4 * 15px) / 2);
+        flex-basis: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
   }
 }
 
@@ -1561,6 +1564,11 @@ img {
     padding-bottom: 94px;
   }
   .exemples-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin-left: calc(-1 * var(--size-between));
     margin-top: calc(-1 * var(--size-between));
   }
